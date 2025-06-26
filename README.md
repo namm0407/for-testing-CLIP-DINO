@@ -2,8 +2,8 @@
 
 ## clip.py
 
-To see if CLIP have successfully downloaded
+For detecting the objects
 
 ## DINO.py
 
-To see if DINO have successfully downloaded
+For showing (boxing) the detected objects
