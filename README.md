@@ -2,7 +2,8 @@
 
 ## clip.py
 
-For detecting the objects
+For detecting the objects,
+uses the transformers library from Hugging Face to load and run a CLIP model
 
 ## DINO.py
 
