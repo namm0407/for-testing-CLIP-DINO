@@ -34,7 +34,7 @@ results = processor.post_process_grounded_object_detection(
     inputs.input_ids,
     box_threshold=0.4,
     text_threshold=0.4,
-    target_sizes=[image.size[::-1]]
+    target_sizes=[image.size[::-1]] # (height, width)
 )[0]
 
 # Visualize the results
