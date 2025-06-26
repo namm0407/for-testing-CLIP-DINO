@@ -54,9 +54,9 @@ for box, score, label in zip(results["boxes"], results["scores"], results["text_
             f"{label} {score:.2f}",
             (box[0], box[1] - 10),
             cv2.FONT_HERSHEY_SIMPLEX,
-            0.5,
+            1.5,
             (0, 255, 0),
-            2,
+            3,
         )
 
 # Display the image
