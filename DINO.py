@@ -1,4 +1,4 @@
-#sucessfully detected the cat (have a green box boxxing the detected object), but it can't detect the dog
+#sucessfully detected objects (have a green box boxxing the detected object with a small name on the top)
 #updated to show the name of the detected object in the terminal.
 
 import torch
@@ -13,8 +13,10 @@ model_id = "IDEA-Research/grounding-dino-base"
 processor = AutoProcessor.from_pretrained(model_id)
 model = AutoModelForZeroShotObjectDetection.from_pretrained(model_id)
 
-# Load an image
+# Load an image (any image) 
+# will only show the last one
 image = Image.open("cat.png").convert("RGB")
+image = Image.open("dogs.jpg").convert("RGB")
 
 # Define the text prompt with proper class separation
 text_prompt = "dog . cat . red car"  # Use periods to separate classes
