@@ -1,0 +1,13 @@
+from ultralytics import YOLOWorld
+
+# Initialize model (don't set device here)
+model = YOLOWorld('yolov8m-world.pt')  # No device parameter here
+
+# Set classes
+model.set_classes(["person", "dog"])
+
+# Run inference with device='cpu'
+results = model.predict("dogs.jpg", device='cpu')  # Set device here
+
+# Show results
+results[0].show()
